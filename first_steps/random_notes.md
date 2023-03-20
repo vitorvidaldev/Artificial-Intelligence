@@ -67,6 +67,8 @@
 - ROC curve
 - K-nearest neighbors
 
+- ChatGPT
+- Code Generation throght AI
 
 References:
 - https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/pages/readings/
