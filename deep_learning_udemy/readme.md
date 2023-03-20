@@ -31,3 +31,17 @@ Activation functions:
 - The Sigmoid Function: Better suited to probabilities when applied at the output layer of your NN.
 - The Rectifier Function
 - Hyperbolic Tangent Function
+
+You can implement a hidden layer that sits between the input and output layers. Not all synapses are weighted. They will either have a zero value or non zero value.
+
+You have the single row of input variables on the left. The arrows that represent weighted synapses go into the large neuron in the middle. And on the right, you have the output avlue. This is called a Single-Layer Feedforward Neural Network. The output value above is represented as Y. This is the actual value. We are going to replace taht with ^Y, which represents the output value. The difference between Y and ^Y is at the core of this entire process. In order for our network to learn we need to compare the output value with the actual value. Then we will apply a cost function, which is one half of the squared difference between the output value and actual value. This is just one commonly used cost function, there are many.
+
+The cost function tells us the error in our prediction. Our aim is to minimize the cost function. The lower the cost function, the closer ^Y is to Y, and hence, the closer our output value to our actual value.
+
+A lower cost function means higher accuracy for our network. Once we have our cost function, a recycling process begins. We feed the resuling data back through the entire NN. The weighted synapses connecting the input variables to the neuron are the only thing we have any control over.
+
+We need to repeat this until we scrub the cost function down to as small a number as possible, as close to zero as it will go.
+
+We feed the variables through the weighted synapses and the neuron to calculate our output value, ^Y. Then the cost function is applied and the data goes in reverse through the NN.
+
+Remember, the input variables do not change. It is only the weight of the synapses that alters the cost function comes into play.
