@@ -45,3 +45,21 @@ We need to repeat this until we scrub the cost function down to as small a numbe
 We feed the variables through the weighted synapses and the neuron to calculate our output value, ^Y. Then the cost function is applied and the data goes in reverse through the NN.
 
 Remember, the input variables do not change. It is only the weight of the synapses that alters the cost function comes into play.
+
+Reducing the cost function. The cost function is the difference between the output value produced at the end of the network and the actual value. The closer these two values, the more accurate our network.
+
+Backpropagation. This is when you feed the end data back through the NN and then adjust the weighted synapses between the input value and the neuron. By repeating this cycle and adjusting the weights accordingly, you reduce the cost function.
+
+Two ways to adjust the weights. The first is the brute force approach. This is far better suited to a single-layer feed-forward network.
+
+Gradient descent. Instead of going through every weight one at a time, and ticking every wrong weight off as you go, you instead look at the angle of the cost function line.
+
+The weights are the only thing we can adjust as we look to bring the difference between our output value and our actual value as close to 0 as possible. This is important because the smaller the difference between those two values, the better our NN is performing.
+
+Gradient descent is a time-saving method with which you are able to leapfrog large chunks of unusable weights by leaping down and across the U-shape on the graph. This is great if the weights you have amassed fit cleanly into this U-shape. This happens when you have one global minimum, the single lowest point of all your weights.
+
+Stochastic Gradient Descent. The difference between Gradient Descent and Stochastic Gradient Descent lies in how each method adjusts the weights in a NN. With the Gradient Descent method, all the weights for all rows of data are adjusted simultaneously. With the Stochastic method, each weight is adjusted individually.
+
+The Stochastic method is a lighter algorithm and therefore faster(????) than its all-encompassing cousin. It also has much higher fluctuations, so on a non-convex graph it is more likely to find the global minimum rather than the local minimum.
+
+The key underlying principle of Backpropagation is  that the structure of the algorithm allows for large numbers of weights to be adjusted simultaneously.
